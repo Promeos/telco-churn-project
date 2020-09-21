@@ -18,7 +18,7 @@ def get_telecom_data():
     file = 'telecom_data.csv'
 
     if os.path.isfile(file):
-        return pd.read_csv('telecom.csv')
+        return pd.read_csv('telecom_data.csv')
     else:
         df = pd.read_sql("""
                         select *
