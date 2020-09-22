@@ -29,7 +29,7 @@ def telcom_data_prep(data_split=False):
     # Replace target variable strings('Yes'/'No') with int's(1/0)
     df.churn = np.where(df.churn == 'Yes', 1, 0)
     
-    df['tenure_years'] = df.tenure / 12
+    df['tenure_years'] = round(df.tenure / 12, 2)
     
     # Collect the column name where values are categorical/strings/objects
     encoded_columns = df.nunique()[df.nunique() <= 4].index.to_list()  # Columns with 4 or less unique values
