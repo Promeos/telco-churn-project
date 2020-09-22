@@ -11,14 +11,14 @@ def get_connection(db, user=env.user, host=env.host, password=env.password):
     return f'mysql+pymysql://{user}:{password}@{host}/{db}'
 
     
-def get_telecom_data():
+def get_telco_data():
     '''
     Returns Telecommunication Data
     '''
-    file = 'telecom_data.csv'
+    file = 'telco_data.csv'
 
     if os.path.isfile(file):
-        return pd.read_csv('telecom_data.csv')
+        return pd.read_csv('telco_data.csv')
     else:
         df = pd.read_sql("""
                         select *
@@ -30,6 +30,6 @@ def get_telecom_data():
                         get_connection('telco_churn')
                         )
         
-        df.to_csv('telecom_data.csv', index=False)
+        df.to_csv('telco_data.csv', index=False)
         return df
 
