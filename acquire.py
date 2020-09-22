@@ -13,7 +13,7 @@ def get_connection(db, user=env.user, host=env.host, password=env.password):
     
 def get_telco_data():
     '''
-    Returns Telecommunication Data
+    Returns telco_data as a pandas DataFrame
     '''
     file = 'telco_data.csv'
 
