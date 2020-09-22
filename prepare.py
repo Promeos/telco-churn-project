@@ -60,12 +60,14 @@ def preprocessed_data():
     df = telco_data_prep()
 
     train_validate, test = train_test_split(df,
-                                            test_size=.3,
+                                            test_size=.2,
+                                            random_state=777,
                                             stratify=df.churn
                                             )
     
     train, validate = train_test_split(train_validate,
-                                       test_size=.2,
+                                       test_size=.3,
+                                       random_state=777,
                                        stratify=train_validate.churn)
 
     return train, validate, test
