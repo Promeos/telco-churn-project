@@ -43,7 +43,7 @@ total_charges|The total amount a customer has paid for Telco™ services|
 3. [Preparation](#Preparation)
 4. [Exploration](#Exploration)
 5. [Modeling](#Modeling)
-6. [Delivery](#Delivery)
+6. [Evaluation](#Evaluation)
 
 ## Planning
 ---
@@ -64,14 +64,13 @@ total_charges|The total amount a customer has paid for Telco™ services|
         - Select the best performing model to use on the test set
     - Model performance: test
 
-Initial Thoughts
-If total_charges is a product of monthly_charges and tenure, possibly drop column.
-
 Hypothesis Tests
 1. Chi2 Test
 Does a customer churn independent of whether they have dependents or a partner?
 Does a customer churn independent of whether they have a month-to-month contract or other types of contracts
 Does a customer churn independent of whether they have dsl or fiber optic internet?
+Does a customer churn independent of whether they have streaming services?
+Does a customer churn independent of whether they make automatic or manual payments?
 
 2. T-Test - Two Sample, One-Tailed
 Do customers who churn have a higher monthly charge than those who don't churn?
@@ -82,14 +81,14 @@ Do customers who churn pay more for phone services than those who don't churn?
 ---
 To analyze this data on your local machine you have several methods:
 
-Download a zip file of the repository [here](https://github.com/Promeos/telecom-churn-project/archive/master.zip)
+> Download a zip file of the repository [here](https://github.com/Promeos/telecom-churn-project/archive/master.zip)
 
-Clone this repository using:
-`git clone git@github.com:Promeos/telecom-churn-project.git`
+> Clone this repository using:
+>`git clone git@github.com:Promeos/telecom-churn-project.git`
 
 To open the file in a jupyter notebook use following code:
 
-import pandas as pd
+>import pandas as pd
 df = pd.read_csv('telco_data.csv')
 
 Note: Be sure that you are in the same directory as the file or use an absolute path to retrieve the file
@@ -113,17 +112,17 @@ Note: Be sure that you are in the same directory as the file or use an absolute 
     - [ ] Test hypotheses
     - [ ] Plot distributions
 - [ ] Create visuals
-- [ ] Present and summarize key findings
+- [ ] Summarize key findings
 
 Hypotheses
 
 ## Modeling
 ---
-- [ ] sklearn.domymathhomework.classification_models
-    - [ ] Create 3 classification models
+- [ ] Create 3 classification models
 
-## Delivery
+## Evaluation
 ---
 
 - [ ] Summarize/Recap key findings
     - [ ] Drivers
+    - [ ]
