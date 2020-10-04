@@ -68,5 +68,7 @@ Be sure that you are in the same directory as the csv file or use an absolute pa
 ## Acknowledgements
 ---
 [Codeup](https://codeup.com/)
+
 Codeup Data Science Instructors
+
 Darden Cohort
