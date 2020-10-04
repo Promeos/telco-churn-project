@@ -1,9 +1,9 @@
 # Telco™ Project
 ***
-### Project Description
+### Description
 Accurately predict customer churn at a telecommunications company, Telco™, using a machine learning classification model.
 
-Telco™ is a telecommunications company that provides competitive internet and phone service packages. Telco™ wants to know why customers are terminating service.
+"Churn rate is the proportion of contractual customers or subscribers who leave a supplier during a given time period. It is a possible indicator of customer dissatisfaction, cheaper and/or better offers from the competition, more successful sales and/or marketing by the competition, or reasons having to do with the customer life cycle." [source](https://en.wikipedia.org/wiki/Churn_rate)
 
 ### Data Dictionary
 ---
@@ -29,11 +29,13 @@ streaming_movies|Indicates if a customer uses internet to stream movies| object 
 paperless_billing|Indicates if a customer is enrolled in paperless billing| object |
 monthly_charges|The amount a customer pays each month for services with Telco™| object |
 total_charges|The total amount a customer has paid for Telco™ services| object |
-|churn|Indicates whether a customer has terminated service| object |
 |internet\_service\_type|Indicates the type of internet service a customer has| object |
 |contract_type|The type of contract a customer has| object |
 |payment_type|How a customer pays their bill each month| object |
----
+
+| Target | Definition | Data Type |
+| ----- | ----- | ----- |
+|churn|Indicates whether a customer has terminated service| object |
 
 ## Setup
 ---
@@ -58,13 +60,13 @@ Be sure that you are in the same directory as the csv file or use an absolute pa
 ---
 - numpy >= 1.18.1
 - pandas >= 1.1.2
+- scipy >= 1.4.1
+- sklearn >= 0.22.1
 - matplotlib >= 3.3.1
 - seaborn >= 0.11.0
 
 ## Acknowledgements
 ---
-```
 [Codeup](https://codeup.com/)
 Codeup Data Science Instructors
 Darden Cohort
-```
